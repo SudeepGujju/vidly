@@ -1,0 +1,4 @@
+{
+	"jwtSecretKey": "JWT_SECRET_KEY",
+	"port" : "PORT"
+}
