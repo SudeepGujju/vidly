@@ -3,6 +3,7 @@ const express = require('express');
 const _ = require('lodash');
 const bcrypt = require('bcrypt');
 const { User } = require('../models/user');
+const config = require('config');
 
 const router = express.Router();
 
@@ -20,7 +21,7 @@ router.post("/", async function(req, res){
 	
 	const token = user.generateAuthToken();
 
-	return res.header('x-auth-token', token).status(200).send(_.pick(user, ['_id','name','email']));
+	return res.header(config.get('authHeader'), token).status(200).send(_.pick(user, ['_id','name','email']));
 
 });
 

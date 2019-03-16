@@ -7,9 +7,25 @@ const rentals = require("../routes/rentals");
 const users = require("../routes/users");
 const auth = require("../routes/auth");
 const errorHandler = require("../middlewares/error");
+const config = require('config');
 
 module.exports = function(app){
-	app.use(cors());
+	
+	/*
+	** origin: Access-Control-Allow-Origin
+	** methods: Access-Control-Allow-Methods
+	** allowedHeaders: Access-Control-Allow-Headers     - default Access-Control-Request-Headers
+	** exposedHeaders: Access-Control-Expose-Headers
+	** credentials: Access-Control-Allow-Credentials
+	** maxAge: Access-Control-Max-Age
+	** preflightContinue: 
+	** optionsSuccessStatus: For successful OPTIONS requests choke on 204 status code
+	*/
+	const corsOptions = {
+		exposedHeaders: [config.get('authHeader')]
+	};
+
+	app.use(cors(corsOptions));
 	app.use(express.json());
 	app.use(express.urlencoded({ extended: true }));
 

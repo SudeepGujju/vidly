@@ -1,4 +1,5 @@
 {
 	"jwtSecretKey": "",
-	"port": "6800"
+	"port": "6800",
+	"authHeader": "X-Auth-Token"
 }

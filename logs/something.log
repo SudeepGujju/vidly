@@ -1,26 +1,96 @@
-{"level":"info","message":"Listening on 6800","timestamp":"2019-02-09T09:19:11.121Z"}
-{"level":"error","message":"{ MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]\n    at Pool.<anonymous> (D:\\Progs\\vidly\\node_modules\\mongodb-core\\lib\\topologies\\server.js:564:11)\n    at emitOne (events.js:116:13)\n    at Pool.emit (events.js:211:7)\n    at Connection.<anonymous> (D:\\Progs\\vidly\\node_modules\\mongodb-core\\lib\\connection\\pool.js:317:12)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at Connection.emit (events.js:214:7)\n    at Socket.<anonymous> (D:\\Progs\\vidly\\node_modules\\mongodb-core\\lib\\connection\\connection.js:246:50)\n    at Object.onceWrapper (events.js:315:30)\n    at emitOne (events.js:116:13)\n    at Socket.emit (events.js:211:7)\n    at emitErrorNT (internal/streams/destroy.js:66:8)\n    at _combinedTickCallback (internal/process/next_tick.js:139:11)\n    at process._tickCallback (internal/process/next_tick.js:181:9)\n  name: 'MongoNetworkError',\n  errorLabels: [ 'TransientTransactionError' ],\n  [Symbol(mongoErrorContextSymbol)]: {} } 'failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]'","timestamp":"2019-02-09T09:19:13.181Z"}
-{"level":"info","message":"Listening on 6800","timestamp":"2019-02-09T09:21:08.658Z"}
-{"level":"error","message":"{ MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]\n    at Pool.<anonymous> (D:\\Progs\\vidly\\node_modules\\mongodb-core\\lib\\topologies\\server.js:564:11)\n    at emitOne (events.js:116:13)\n    at Pool.emit (events.js:211:7)\n    at Connection.<anonymous> (D:\\Progs\\vidly\\node_modules\\mongodb-core\\lib\\connection\\pool.js:317:12)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at Connection.emit (events.js:214:7)\n    at Socket.<anonymous> (D:\\Progs\\vidly\\node_modules\\mongodb-core\\lib\\connection\\connection.js:246:50)\n    at Object.onceWrapper (events.js:315:30)\n    at emitOne (events.js:116:13)\n    at Socket.emit (events.js:211:7)\n    at emitErrorNT (internal/streams/destroy.js:66:8)\n    at _combinedTickCallback (internal/process/next_tick.js:139:11)\n    at process._tickCallback (internal/process/next_tick.js:181:9)\n  name: 'MongoNetworkError',\n  errorLabels: [ 'TransientTransactionError' ],\n  [Symbol(mongoErrorContextSymbol)]: {} } 'failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]'","timestamp":"2019-02-09T09:21:10.707Z"}
-{"level":"info","message":"Listening on 6800","timestamp":"2019-02-09T10:04:26.305Z"}
-{"level":"info","message":"Listening on 6800","timestamp":"2019-02-09T10:04:28.739Z"}
-{"level":"error","message":"{ MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]\n    at Pool.<anonymous> (D:\\Progs\\vidly\\node_modules\\mongodb-core\\lib\\topologies\\server.js:564:11)\n    at emitOne (events.js:116:13)\n    at Pool.emit (events.js:211:7)\n    at Connection.<anonymous> (D:\\Progs\\vidly\\node_modules\\mongodb-core\\lib\\connection\\pool.js:317:12)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at Connection.emit (events.js:214:7)\n    at Socket.<anonymous> (D:\\Progs\\vidly\\node_modules\\mongodb-core\\lib\\connection\\connection.js:246:50)\n    at Object.onceWrapper (events.js:315:30)\n    at emitOne (events.js:116:13)\n    at Socket.emit (events.js:211:7)\n    at emitErrorNT (internal/streams/destroy.js:66:8)\n    at _combinedTickCallback (internal/process/next_tick.js:139:11)\n    at process._tickCallback (internal/process/next_tick.js:181:9)\n  name: 'MongoNetworkError',\n  errorLabels: [ 'TransientTransactionError' ],\n  [Symbol(mongoErrorContextSymbol)]: {} } 'failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]'","timestamp":"2019-02-09T10:04:30.801Z"}
-{"level":"info","message":"Listening on 6800","timestamp":"2019-02-09T10:07:46.479Z"}
-{"message":"failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]","stack":"MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]\n    at Pool.<anonymous> (D:\\Progs\\vidly\\node_modules\\mongodb-core\\lib\\topologies\\server.js:564:11)\n    at emitOne (events.js:116:13)\n    at Pool.emit (events.js:211:7)\n    at Connection.<anonymous> (D:\\Progs\\vidly\\node_modules\\mongodb-core\\lib\\connection\\pool.js:317:12)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at Connection.emit (events.js:214:7)\n    at Socket.<anonymous> (D:\\Progs\\vidly\\node_modules\\mongodb-core\\lib\\connection\\connection.js:246:50)\n    at Object.onceWrapper (events.js:315:30)\n    at emitOne (events.js:116:13)\n    at Socket.emit (events.js:211:7)\n    at emitErrorNT (internal/streams/destroy.js:66:8)\n    at _combinedTickCallback (internal/process/next_tick.js:139:11)\n    at process._tickCallback (internal/process/next_tick.js:181:9)","name":"MongoNetworkError","errorLabels":["TransientTransactionError"],"level":"error","timestamp":"2019-02-09T10:07:48.526Z"}
-{"message":"failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]","stack":"MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]\n    at Pool.<anonymous> (D:\\Progs\\vidly\\node_modules\\mongodb-core\\lib\\topologies\\server.js:564:11)\n    at emitOne (events.js:116:13)\n    at Pool.emit (events.js:211:7)\n    at Connection.<anonymous> (D:\\Progs\\vidly\\node_modules\\mongodb-core\\lib\\connection\\pool.js:317:12)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at Connection.emit (events.js:214:7)\n    at Socket.<anonymous> (D:\\Progs\\vidly\\node_modules\\mongodb-core\\lib\\connection\\connection.js:246:50)\n    at Object.onceWrapper (events.js:315:30)\n    at emitOne (events.js:116:13)\n    at Socket.emit (events.js:211:7)\n    at emitErrorNT (internal/streams/destroy.js:66:8)\n    at _combinedTickCallback (internal/process/next_tick.js:139:11)\n    at process._tickCallback (internal/process/next_tick.js:181:9)","name":"MongoNetworkError","errorLabels":["TransientTransactionError"],"level":"error","timestamp":"2019-02-09T10:07:48.560Z"}
-{"level":"info","message":"Listening on 6800","timestamp":"2019-02-09T10:09:02.789Z"}
-{"message":"failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]","stack":"MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]\n    at Pool.<anonymous> (D:\\Progs\\vidly\\node_modules\\mongodb-core\\lib\\topologies\\server.js:564:11)\n    at emitOne (events.js:116:13)\n    at Pool.emit (events.js:211:7)\n    at Connection.<anonymous> (D:\\Progs\\vidly\\node_modules\\mongodb-core\\lib\\connection\\pool.js:317:12)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at Connection.emit (events.js:214:7)\n    at Socket.<anonymous> (D:\\Progs\\vidly\\node_modules\\mongodb-core\\lib\\connection\\connection.js:246:50)\n    at Object.onceWrapper (events.js:315:30)\n    at emitOne (events.js:116:13)\n    at Socket.emit (events.js:211:7)\n    at emitErrorNT (internal/streams/destroy.js:66:8)\n    at _combinedTickCallback (internal/process/next_tick.js:139:11)\n    at process._tickCallback (internal/process/next_tick.js:181:9)","name":"MongoNetworkError","errorLabels":["TransientTransactionError"],"level":"error","timestamp":"2019-02-09T10:09:04.853Z"}
-{"message":"failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]","stack":"MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]\n    at Pool.<anonymous> (D:\\Progs\\vidly\\node_modules\\mongodb-core\\lib\\topologies\\server.js:564:11)\n    at emitOne (events.js:116:13)\n    at Pool.emit (events.js:211:7)\n    at Connection.<anonymous> (D:\\Progs\\vidly\\node_modules\\mongodb-core\\lib\\connection\\pool.js:317:12)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at Connection.emit (events.js:214:7)\n    at Socket.<anonymous> (D:\\Progs\\vidly\\node_modules\\mongodb-core\\lib\\connection\\connection.js:246:50)\n    at Object.onceWrapper (events.js:315:30)\n    at emitOne (events.js:116:13)\n    at Socket.emit (events.js:211:7)\n    at emitErrorNT (internal/streams/destroy.js:66:8)\n    at _combinedTickCallback (internal/process/next_tick.js:139:11)\n    at process._tickCallback (internal/process/next_tick.js:181:9)","name":"MongoNetworkError","errorLabels":["TransientTransactionError"],"level":"error","timestamp":"2019-02-09T10:09:04.875Z"}
-{"level":"info","message":"Listening on 6800","timestamp":"2019-02-09T10:23:10.483Z"}
-{"message":"failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]","stack":"MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]\n    at Pool.<anonymous> (D:\\Progs\\vidly\\node_modules\\mongodb-core\\lib\\topologies\\server.js:564:11)\n    at emitOne (events.js:116:13)\n    at Pool.emit (events.js:211:7)\n    at Connection.<anonymous> (D:\\Progs\\vidly\\node_modules\\mongodb-core\\lib\\connection\\pool.js:317:12)\n    at Object.onceWrapper (events.js:317:30)\n    at emitTwo (events.js:126:13)\n    at Connection.emit (events.js:214:7)\n    at Socket.<anonymous> (D:\\Progs\\vidly\\node_modules\\mongodb-core\\lib\\connection\\connection.js:246:50)\n    at Object.onceWrapper (events.js:315:30)\n    at emitOne (events.js:116:13)\n    at Socket.emit (events.js:211:7)\n    at emitErrorNT (internal/streams/destroy.js:66:8)\n    at _combinedTickCallback (internal/process/next_tick.js:139:11)\n    at process._tickCallback (internal/process/next_tick.js:181:9)","name":"MongoNetworkError","errorLabels":["TransientTransactionError"],"level":"error","timestamp":"2019-02-09T10:23:12.566Z"}
-{"level":"info","message":"Listening on 6800 ","timestamp":"2019-02-13T16:05:13.150Z"}
-{"level":"info","message":"Connected to MongoDB","timestamp":"2019-02-13T16:05:14.260Z"}
-{"level":"info","message":"Listening on 6800 ","timestamp":"2019-02-13T16:21:22.844Z"}
-{"level":"info","message":"Connected to MongoDB","timestamp":"2019-02-13T16:21:23.937Z"}
-{"level":"info","message":"Listening on 6800 ","timestamp":"2019-02-13T16:27:05.292Z"}
-{"level":"info","message":"Connected to MongoDB","timestamp":"2019-02-13T16:27:06.340Z"}
-{"level":"info","message":"Listening on 6800 ","timestamp":"2019-02-13T16:29:22.138Z"}
-{"level":"info","message":"Connected to MongoDB","timestamp":"2019-02-13T16:29:23.210Z"}
-{"level":"info","message":"Listening on 6800 ","timestamp":"2019-02-13T18:53:14.509Z"}
-{"level":"info","message":"Listening on 6800 ","timestamp":"2019-02-13T18:53:40.135Z"}
-{"level":"info","message":"Connected to MongoDB","timestamp":"2019-02-13T18:53:41.305Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-02-24T11:33:44.767Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-02-24T11:33:45.814Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-02-24T11:34:31.862Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-02-24T11:34:32.902Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-02-24T11:34:58.079Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-02-24T11:34:59.159Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-02-24T13:51:51.820Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-02-24T13:51:53.437Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-02-24T13:51:54.500Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-02-24T14:59:21.552Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-02-24T14:59:22.643Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-02-25T17:22:27.954Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-02-25T17:22:29.060Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-02-25T17:24:40.775Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-02-25T17:24:41.851Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-02T09:45:53.191Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-02T09:45:54.255Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-02T14:17:28.636Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-02T14:17:29.705Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-02T14:28:53.980Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-02T14:28:55.047Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-02T14:40:31.060Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-02T14:40:32.122Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-02T15:05:59.509Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-02T15:06:00.563Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-02T15:13:30.929Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-02T15:13:31.994Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-02T15:21:50.871Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-02T15:21:51.923Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-02T15:25:01.724Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-02T15:25:02.820Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-02T15:27:32.154Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-02T15:27:33.219Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-02T15:27:43.689Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-02T15:27:44.751Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-02T15:27:59.015Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-02T15:28:00.081Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-02T15:28:06.616Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-02T15:28:07.684Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-02T15:32:16.462Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-02T15:32:17.554Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-02T15:33:31.310Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-02T15:33:32.375Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-02T15:44:44.964Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-02T15:44:46.028Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-03T04:10:16.245Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-03T04:10:17.341Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-03T11:00:32.055Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-03T11:00:33.131Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-04T05:04:17.957Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-04T05:04:19.550Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-04T05:04:20.620Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-04T05:37:04.157Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-04T05:37:05.195Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-04T16:19:36.220Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-04T16:19:37.364Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-04T17:16:58.040Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-06T17:16:46.604Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-06T17:16:47.672Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-06T18:15:16.975Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-07T17:00:56.193Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-07T17:00:57.414Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-08T15:48:35.791Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-08T15:48:36.873Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-08T16:33:13.832Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-08T16:33:14.884Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-08T16:38:47.144Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-08T16:38:48.203Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-08T16:55:46.732Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-08T16:55:47.798Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-08T18:32:09.932Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-08T18:32:10.988Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-12T16:27:57.542Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-12T16:27:58.646Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-14T15:57:00.941Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-14T15:57:02.062Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-16T06:15:52.044Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-16T06:15:53.105Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-16T12:02:18.757Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-16T12:02:19.835Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-16T12:09:04.415Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-16T12:09:05.497Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-16T12:10:02.739Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-16T12:10:03.845Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-16T12:10:48.071Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-16T12:10:49.146Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-16T12:11:29.060Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-16T12:11:30.180Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-16T12:12:07.744Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-16T12:12:08.822Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-16T12:12:50.673Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-16T12:12:51.865Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-16T12:15:21.693Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-16T12:15:22.826Z"}
+{"level":"info","message":"Listening on 6800 ","timestamp":"2019-03-16T12:16:19.380Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2019-03-16T12:16:20.508Z"}

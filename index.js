@@ -1,15 +1,17 @@
-const winston = require('winston');
-const express = require('express');
+const winston = require("winston");
+const express = require("express");
 const app = express();
 
-require('./startup/logging')();
-require('./startup/validation')();
-require('./startup/routes')(app);
-require('./startup/database')();
-require('./startup/configuration')();
+require("./startup/logging")();
+require("./startup/configuration")();
+require("./startup/validation")();
+require("./startup/routes")(app);
+require("./startup/database")();
 
 const port = process.env.PORT || 6800;
-app.listen(port, () => { winston.info(`Listening on ${port}`); });
+app.listen(port, () => {
+  winston.info(`Listening on ${port}`);
+});
 
 /*
 const logger = winston.createLogger({
@@ -22,14 +24,14 @@ const logger = winston.createLogger({
 });
 */
 
-function handleException(ex){
-	let result = [];
+function handleException(ex) {
+  let result = [];
 
-	for(field in ex.errors){
-		result.push( ex.errors[field].message);
-	}
+  for (field in ex.errors) {
+    result.push(ex.errors[field].message);
+  }
 
-	return result.join(" -> ");
+  return result.join(" -> ");
 }
 /*
 process.on('SIGINT',async function(){
