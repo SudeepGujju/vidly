@@ -1,20 +1,26 @@
-const winston = require('winston');
-require('winston-mongodb');
-require('express-async-errors');
+const winston = require("winston");
+require("winston-mongodb");
+require("express-async-errors");
 
-module.exports = function(){
+module.exports = function() {
+  winston.add(winston.transports.File, { filename: "./logs/complete.log" });
+  winston.add(winston.transports.MongoDB, { db: "mongodb://localhost:27017" });
 
-	winston.add(winston.transports.File,{ filename: './logs/something.log'});
-	winston.add(winston.transports.MongoDB,{ db: 'mongodb://localhost:27017'});
+  winston.handleExceptions(
+    new winston.transports.File({ filename: "./logs/uncaughtExceptions.log" })
+  );
 
-	winston.handleExceptions(
-		new winston.transports.File({ filename: './logs/uncaughtExceptions.log' }));
+  process.on("uncaughtException", function(ex) {
+    //console.log('Uncaught >>>',ex);
+	throw ex;
+    // 'EADDRINUSE' Address already in use
+  });
 
-	process.on('unhandledRejection', function(ex){
-		throw ex;
-	});
+  process.on("unhandledRejection", function(ex) {
+    throw ex;
+  });
 
-	/*
+  /*
 	process.on('uncaughtException', function(err){
 		winston.error(err.message, err);
 		process.exit(1);
@@ -27,5 +33,11 @@ module.exports = function(){
 		return false;
 	});
 	*/
+};
 
-}
+module.exports.stream = {
+  write: function(message, encoding) {
+    console.log(message);
+    winston.info(message);
+  }
+};

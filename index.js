@@ -1,12 +1,14 @@
 const winston = require("winston");
 const express = require("express");
 const app = express();
+const https = require('https');
 
 require("./startup/logging")();
 require("./startup/configuration")();
 require("./startup/validation")();
 require("./startup/routes")(app);
 require("./startup/database")();
+//require("./startup/upload")();
 
 const port = process.env.PORT || 6800;
 app.listen(port, () => {

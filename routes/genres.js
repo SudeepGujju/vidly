@@ -2,6 +2,7 @@ const express = require('express');
 const { Genre, validate } = require('../models/genre');
 const auth = require('../middlewares/auth');
 const admin = require('../middlewares/admin');
+const _ = require('lodash');
 
 const router = express.Router();
 
@@ -36,13 +37,17 @@ router.post("/", auth, async function(req, res){
 });
 
 router.put("/:id", auth, async function(req, res){
+
+	const genreReqBody = _.pick(req.body,['name']);
 	
-	const { error } = validate(req.body);
+	const { error } = validate(genreReqBody);
 	if(error)return res.status(400).status(error.details[0].message);
-	
-	const genre = await Genre.findByIdAndUpdate(req.params.id, {
+
+	/* const genre = await Genre.findByIdAndUpdate(req.params.id, {
 		name: req.body.name
-	},{new: true});
+	},{new: true}); */
+	
+	const genre = await Genre.findOneAndUpdate({_id: req.params.id}, genreReqBody, {new: true});
 
 	if(!genre)return res.status(404).send("The genre with the given id was not found to update");
 	

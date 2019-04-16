@@ -8,6 +8,9 @@ const users = require("../routes/users");
 const auth = require("../routes/auth");
 const errorHandler = require("../middlewares/error");
 const config = require('config');
+const logger = require('./logging');
+const morgan = require('morgan');
+const path = require("path");
 
 module.exports = function(app){
 	
@@ -24,10 +27,11 @@ module.exports = function(app){
 	const corsOptions = {
 		exposedHeaders: [config.get('authHeader')]
 	};
-
+	app.use(morgan('dev',{stream: logger.stream }));// -> moved to logging.js
 	app.use(cors(corsOptions));
 	app.use(express.json());
 	app.use(express.urlencoded({ extended: true }));
+	app.use(express.static(path.join(__dirname+'/../dist/AngularApp/')));
 
 	app.use("/customers", customers);
 	app.use("/genres", genres);

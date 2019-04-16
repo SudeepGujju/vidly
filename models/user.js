@@ -8,7 +8,7 @@ const Schema = mongoose.Schema;
 const userSchema = new Schema({
   name: {
     type: String,
-    minlength: 5,
+    minlength: 4,
     maxlength: 50,
     required: true
   },
@@ -36,6 +36,9 @@ const userSchema = new Schema({
   isAdmin: {
     type: Boolean,
     default: false
+  },
+  profilePic:{
+	  type: Buffer
   }
 });
 
@@ -49,7 +52,7 @@ userSchema.methods.generateAuthToken = function() {
 
 const userJoiSchema = {
   name: Joi.string()
-    .min(5)
+    .min(4)
     .max(50)
     .required(),
   email: Joi.string()
