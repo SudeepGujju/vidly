@@ -1,5 +1,32 @@
 {
-	"jwtSecretKey": "",
-	"port": "6800",
-	"authHeader": "X-Auth-Token"
+  "jwtSecretKey": "",
+  "port": "6800",
+  "authHeader": "X-Auth-Token",
+  "DBConfig": {
+    "host": "localhost",
+    "port": ":27017",
+    "db": "vidly",
+    "url": "mongodb://localhost:27017/vidly"
+  },
+  "Collections": {
+    "Genre": "GENRE",
+    "File": "FILE",
+    "Log": "LOG",
+    "Movie": "MOVIE",
+    "Rental": "RENTAL",
+    "User": "USER"
+  },
+  "Files": {
+    "downloads": "downloads",
+    "uploads": "uploads",
+    "images": "images"
+  },
+ "JoiSchemaOptions":{
+    "allowUnknown": true
+  },
+  "//":{
+    "Joi":{
+      "stripUnknown": true
+    }
+  }
 }

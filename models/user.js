@@ -46,7 +46,7 @@ userSchema.methods.generateAuthToken = function() {
   return jwt.sign(
     { _id: this._id, isAdmin: this.isAdmin, name: this.name },
     config.get("jwtSecretKey"),
-	{expiresIn: '1h'}
+	  {expiresIn: '1h'}
   );
 };
 

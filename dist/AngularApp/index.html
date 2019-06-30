@@ -26,6 +26,16 @@
 
 <body>
   <app-root></app-root>
-<script type="text/javascript" src="runtime.06daa30a2963fa413676.js"></script><script type="text/javascript" src="polyfills.fc891625b923cd349611.js"></script><script type="text/javascript" src="main.997d0b47130d35ffd595.js"></script></body>
+<script type="text/javascript" src="runtime.06daa30a2963fa413676.js"></script><script type="text/javascript" src="polyfills.fc891625b923cd349611.js"></script><script type="text/javascript" src="main.879f3143408f028c269a.js"></script></body>
+<script>
+  function onDeviceReady() {
+    if (navigator.connection.type == Connection.NONE) {
+      navigator.notification.alert('An internet connection is required to continue');
+    } else {
+      window.location = "http://localhost:6800";
+    }
+  }
+  document.addEventListener("deviceready", onDeviceReady, false);
+</script>
 
 </html>

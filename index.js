@@ -1,13 +1,13 @@
 const winston = require("winston");
 const express = require("express");
 const app = express();
-const https = require('https');
+const https = require("https");
 
 require("./startup/logging")();
 require("./startup/configuration")();
 require("./startup/validation")();
-require("./startup/routes")(app);
 require("./startup/database")();
+require("./startup/routes")(app);
 //require("./startup/upload")();
 
 const port = process.env.PORT || 6800;
@@ -16,15 +16,6 @@ app.listen(port, () => {
 });
 
 /*
-const logger = winston.createLogger({
-	level: 'error',
-	transports:[
-		new winston.transports.MongoDB({level:'error', db: "mongodb://localhost:27017/vidly"}),
-		new winston.transports.Console(),
-		new winston.transports.File({ filename: 'combined.txt'})
-	]
-});
-*/
 
 function handleException(ex) {
   let result = [];
@@ -35,14 +26,13 @@ function handleException(ex) {
 
   return result.join(" -> ");
 }
-/*
-process.on('SIGINT',async function(){
-	try{
-		await mongoose.connection.close();
-		console.log("Disconnected to MongoDB");
-		process.exit(0);
-	}catch(err){
-		console.log(err);
-		process.exit(1);
-	}
-});*/
+
+const logger = winston.createLogger({
+	level: 'error',
+	transports:[
+		new winston.transports.MongoDB({level:'error', db: "mongodb://localhost:27017/vidly"}),
+		new winston.transports.Console(),
+		new winston.transports.File({ filename: 'combined.txt'})
+	]
+});
+*/

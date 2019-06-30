@@ -1,3 +1,4 @@
+const config = require("config");
 const Joi = require("joi");
 const mongoose = require("mongoose");
 const { genreSchema } = require("./genre");
@@ -6,34 +7,44 @@ const { genreSchema } = require("./genre");
 const Schema = mongoose.Schema;
 
 /* Schemas */
-const movieSchema = new Schema({
-  title: {
-    type: String,
-    trim: true,
-    minlength: 5,
-    maxlength: 255,
-    required: true
+const movieSchema = new Schema(
+  {
+    title: {
+      type: String,
+      trim: true,
+      minlength: 5,
+      maxlength: 255,
+      required: true
+    },
+    genre: {
+      type: genreSchema,
+      required: true
+    },
+    numberInStock: {
+      type: Number,
+      min: 0,
+      max: 255,
+      required: true
+    },
+    dailyRentalRate: {
+      type: Number,
+      min: 0,
+      max: 255,
+      required: true
+    },
+    coverPic: {
+      // data: Buffer,
+      // contentType: String
+      _id: {
+        type: Schema.Types.ObjectId,
+        alias: 'coverPicID'
+      }
+    }
   },
-  genre: {
-    type: genreSchema,
-    required: true
-  },
-  numberInStock: {
-    type: Number,
-    min: 0,
-    max: 255,
-    required: true
-  },
-  dailyRentalRate: {
-    type: Number,
-    min: 0,
-    max: 255,
-    required: true
-  },
-  coverPic: {
-    type: Buffer
+  {
+    collection: config.Collections.Movie
   }
-});
+);
 
 const movieSchemaLite = new Schema({
   title: {
@@ -66,20 +77,15 @@ const movieJoiSchema = {
     .integer()
     .min(0)
     .max(255)
-    .required()
-};
-
-const movieJoiSchemaOptions = {
-  //stripUnknown: true
-  allowUnknown: true
+    .required(),
+  coverPicID: [Joi.allow(null), Joi.objectId()]
 };
 
 /* Models */
-//@Movie -> Collection Name (Table)
-const MovieModel = mongoose.model("Movie", movieSchema);
+const MovieModel = mongoose.model(config.get('Collections.Movie'), movieSchema);
 
 function validateMovie(movie) {
-  return Joi.validate(movie, movieJoiSchema, movieJoiSchemaOptions);
+  return Joi.validate(movie, movieJoiSchema, config.get('JoiSchemaOptions'));
 }
 
 module.exports.movieSchemaLite = movieSchemaLite;

@@ -1,3 +1,4 @@
+const config = require("config");
 const Joi = require('joi');
 const mongoose = require('mongoose');
 
@@ -11,7 +12,8 @@ const genreSchema = new Schema({
 		type: String,
 		minlength: 5,
 		maxlength: 50,
-		required: true
+		required: true,
+		unique: true
 	}
 });
 
@@ -20,11 +22,10 @@ const genreJoiSchema = {
 };
 
 /* Models */
-//@Genre -> Collection Name (Table)
-const GenreModel = new mongoose.model('Genre',genreSchema);
+const GenreModel = new mongoose.model(config.get('Collections.Genre'), genreSchema);
 
 function validateGenre(genre){
-	return Joi.validate(genre, genreJoiSchema);
+	return Joi.validate(genre, genreJoiSchema, config.get('JoiSchemaOptions'));
 }
 
 module.exports.validate = validateGenre;

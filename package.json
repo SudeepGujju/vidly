@@ -1,13 +1,26 @@
 {
   "name": "vidly",
   "version": "1.0.0",
-  "description": "Vidly api",
+  "description": "Vidly",
   "main": "index.js",
+  "author": {
+    "name": "sudeep",
+    "email": "sudeepasmith8@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SudeepGujju/vidly.git"
+  },
   "scripts": {
-    "start": "set JWT_SECRET_KEY='JWT_SECRET_KEY_789546' && set PORT=6800 && nodemon index.js",
+    "start": "set JWT_SECRET_KEY='JWT_SECRET_KEY_789546' && set PORT=6800 && nodemon --delay 2500ms --ignore 'logs' index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "//": [
+    "https://github.com/kelektiv/node.bcrypt.js/wiki/Installation-Instructions",
+    "before installing brcypt",
+    "Open PowerShell(Admin) and execute below command",
+    "npm install --global --production windows-build-tools"
+  ],
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^3.0.3",
@@ -16,6 +29,7 @@
     "express": "^4.16.4",
     "express-async-errors": "^3.1.1",
     "fawn": "^2.1.5",
+    "gridfs-stream": "^1.1.1",
     "joi": "^14.3.1",
     "joi-objectid": "^2.0.0",
     "jsonwebtoken": "^8.4.0",
@@ -23,6 +37,7 @@
     "mongoose": "^5.4.7",
     "morgan": "^1.9.1",
     "multer": "^1.4.1",
+    "multer-gridfs-storage": "^3.2.3",
     "winston": "^2.4.0",
     "winston-mongodb": "^3.0.0"
   }
